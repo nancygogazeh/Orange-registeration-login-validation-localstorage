@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+
+//setItem
+window.localStorage.setItem('color' , 'red')
+window.localStorage.setItem('fontsize' , '30px')
+window.localStorage.setItem('fontweight' , 'bold')
+
+console.log (window.localStorage)
+console.log (typeof window.localStorage)
+
+//getItem
+console.log(window.localStorage.color);
+console.log(window.localStorage.getItem('color'));
+
+
+//set color in page
+document.body.style.background= window.localStorage.color ;
+
+//remove Item 
+// localstorge.removeItem("color");
+//clear
+// window.localstorage.clear();
+
+//session storage
+window.sessionStorage.setItem ('color' ,'blue')
+console.log(window.sessionStorage)
+
+
+  /*-----Cookies-------- */
+  document.cookie =' course = javaSecript' ;
+  console.log(document.cookie)
+  //' document.cookie =` course = javaSecript ; expires =Tue Aug 16 2025 12:09:24 GMT+0300; path = /`
+
+
+
+
+</script>
+</body>
+</html>
